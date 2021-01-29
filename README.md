@@ -10,3 +10,5 @@
     <img alt="Discord JakeyWakey#1569" src="https://img.shields.io/badge/Personal-JakeyWakey%231569-%2300BFFF.svg?logo=discord">
   </a>
 </p>
+
+Airlock is a Discord bot that moves lurkers into the AFK channel once deafened.
