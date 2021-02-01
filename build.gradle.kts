@@ -17,6 +17,17 @@ dependencies {
     implementation("me.jakejmattson:DiscordKt:0.22.0-SNAPSHOT")
 }
 
-tasks.compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+tasks {
+    compileKotlin {
+        kotlinOptions.jvmTarget = "1.8"
+    }
+
+    shadowJar {
+        archiveFileName.set("AirLock.jar")
+        manifest {
+            attributes(
+                "Main-Class" to "me.jakejmattson.airlock.MainAppKt"
+            )
+        }
+    }
 }
